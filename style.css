@@ -24,12 +24,12 @@ body {
     line-height: 1.6;
 }
 
-/* Glassmorphism Header */
+/* Header & Logo Container */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
+    padding: 15px 8%;
     background: rgba(18, 24, 36, 0.85);
     backdrop-filter: blur(12px);
     position: sticky;
@@ -38,7 +38,20 @@ header {
     border-bottom: 1px solid rgba(223, 168, 87, 0.2);
 }
 
-.logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.logo-text {
     font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 700;
@@ -66,23 +79,6 @@ nav a {
 
 nav a:hover {
     color: var(--gold);
-}
-
-.admin-btn {
-    background: transparent;
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.admin-btn:hover {
-    background: var(--gold);
-    color: #000;
 }
 
 /* Hero Section */
@@ -435,10 +431,10 @@ footer {
     font-size: 13px;
     color: var(--text-muted);
 }
-/* Hidden Admin Link in Footer */
+
 .hidden-trigger {
     font-size: 11px;
-    color: #121824; /* Background ke sath blend ho kar chhup jayega */
+    color: #121824;
     cursor: pointer;
     margin-top: 10px;
     user-select: none;
@@ -446,5 +442,5 @@ footer {
 }
 
 .hidden-trigger:hover {
-    color: var(--card-border); /* Sirf hover karne par thoda highlight hoga */
+    color: var(--card-border);
 }
