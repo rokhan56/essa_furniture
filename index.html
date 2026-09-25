@@ -284,6 +284,32 @@
         footer { text-align: center; padding: 20px; border-top: 1px solid var(--card-border); margin-top: auto; font-size: 14px; color: var(--text-muted); }
         .hidden-trigger { cursor: pointer; color: var(--bg-dark); }
         .hidden-trigger:hover { color: var(--text-muted); }
+        /* Mobile Responsive Horizontal Navigation Bar */
+nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    justify-content: flex-start !important;
+    padding: 10px 5px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox scrollbar hide */
+}
+
+/* Chrome, Safari & Edge mein scrollbar chupane ke liye */
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+/* Category Buttons ki sizing Mobile ke liye */
+nav a, nav button, .nav-btn {
+    flex: 0 0 auto !important;
+    padding: 8px 14px !important;
+    font-size: 0.9em !important;
+    margin: 0 4px !important;
+    border-radius: 20px;
+}
+        
 
     </style>
 </head>
